@@ -1,9 +1,18 @@
-.d-center{
-    padding-left: 548px;
+.center {
+    width: 45%;
+    margin-top: 236px;
 }
-.i-standard {
-    
+.margin {
+    width: 45%;
+    margin-top: 20px;
 }
-.b-standard {
-
+.w45p{
+    width: 45%;
+}
+.cm{
+    text-align:center;
+    margin-top: 25px;
+}
+.p{
+    margin-left: 5px;
 }
