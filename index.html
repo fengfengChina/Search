@@ -11,24 +11,26 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="index.js" type="text/javascript"></script>
     <link rel="stylesheet" href="index.css" />
     <title>Search Anything</title>
 </head>
 
-<body>
+<body id="hhhh">
+
     <div class="container center">
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入I获取焦点">
+        <input onfocus="unregListner()" onblur="regListner(event)" id="content" type="text" class="form-control" placeholder="输入I获取焦点">
     </div>
     <div class="container p45p">
         <div class="cm">
-            <button class="btn btn-primary p">百度[B]</button>
-            <button class="btn btn-warning p">Google[G]</button>
-            <button class="btn btn-danger  p">Youtube[Y]</button>
-            <button class="btn btn-warning p">搜狗[S]</button>
-            <button class="btn btn-primary p">百度翻译[T]</button>
+            <button class="btn btn-primary p" onclick="baidu()">百度[B]</button>
+            <button class="btn btn-warning p" onclick="google()">Google[G]</button>
+            <button class="btn btn-danger  p" onclick="youtube()">Youtube[Y]</button>
+            <button class="btn btn-warning p" onclick="sogou()">搜狗[S]</button>
+            <button class="btn btn-primary p" onclick="translate1()">百度翻译[T]</button>
         </div>
+        <input type="text" value="sadisdj" id="jin">
     </div>
-
 
 
 
